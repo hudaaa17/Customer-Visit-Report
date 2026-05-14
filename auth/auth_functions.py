@@ -203,7 +203,7 @@ def remove_user(uid, email):
     # Delete from Firebase Auth
     from auth.firebase_config import init_firebase  # ← add this
     from firebase_admin import auth
-    init_firebase() 
+    #init_firebase() 
     try:
         auth.delete_user(uid)
     except Exception:
